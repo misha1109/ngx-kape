@@ -1,0 +1,10 @@
+{
+  "data": {
+    "vouch1": {
+      "discount": 0.8
+    },
+    "vouch2": {
+      "discount": 0.5
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.nav-wrapper {
+  img {
+    padding: 0.5em;
+    max-width: 100%;
+  }
+  .menu {
+    margin-top: 25px;
+    text-align: center;
+    .lang {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

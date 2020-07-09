@@ -1,0 +1,42 @@
+.card-wrapper {
+  margin: 1em 2em;
+  max-width: 200px;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.2s;
+  text-align: center;
+  &:hover {
+    transform: scale(1.08);
+    -webkit-box-shadow: 5px 5px 5px 0px var(--grey-blue);
+    -moz-box-shadow: 5px 5px 5px 0px var(--grey-blue);
+    box-shadow: 5px 5px 5px 0px var(--grey-blue);
+  }
+  .free-wrapper {
+    position: relative;
+    height: 110px;
+    img {
+      position: absolute;
+      height: 100px;
+      top: -16px;
+      left: -16px;
+    }
+    .free-text {
+      width: 84px;
+      color: #FFF;
+      z-index: 10;
+      position: absolute;
+      transform: rotate(-40deg);
+      top: 0px;
+      left: -16px;
+      line-height: 1.2;
+    }
+    .gift {
+      position: relative;
+      top: 72px;
+      background: rgb(var(--red));
+      border-radius: 5px;
+      width: fit-content;
+      margin: auto;
+      padding: 0 0.5em;
+    }
+  }
+}

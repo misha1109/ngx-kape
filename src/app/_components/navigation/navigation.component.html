@@ -1,0 +1,19 @@
+<div class="nav-wrapper flex-row-center">
+  <img src="/assets/images/logo/logo.svg" alt="The Great Editor Tool"/>
+<!--  // TODO: shortcut the src path-->
+  <div class="menu">
+    <app-sub-menu *ngFor="let item of navItems" [navItem]="item"></app-sub-menu>
+    <button *ngIf="lang" mat-button [matMenuTriggerFor]="langMenu" #trigger="matMenuTrigger">
+      <img src="/assets/images/misc/globe-americas.svg" alt="language"/>
+      <span>{{ lang.current }}</span>
+      <img src="/assets/images/misc/chevron-down.svg" alt="down arrow"/>
+      <mat-menu #langMenu="matMenu">
+        <button mat-menu-item *ngFor="let lang of lang.languages"
+          (click)="setLang(lang)"
+        >
+          {{ lang }}
+        </button>
+      </mat-menu>
+    </button>
+  </div>
+</div>

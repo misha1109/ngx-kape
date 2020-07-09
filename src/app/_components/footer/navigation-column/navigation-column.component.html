@@ -1,0 +1,10 @@
+<div>
+  <a [routerLink]="['/', column.url]">
+    <app-paragraph [text]="column.title.toUpperCase()" [weight]="'bold'"
+                   [size]="14" [color]="'var(--white)'" [padding]="'1em 2em'"
+    ></app-paragraph>
+  </a>
+  <a *ngFor="let child of column.children" [routerLink]="child.url">
+    <app-paragraph [text]="child.title" [size]="12" [color]="'var(--white)'" [align]="'left'"></app-paragraph>
+  </a>
+</div>

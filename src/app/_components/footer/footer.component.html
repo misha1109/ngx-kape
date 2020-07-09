@@ -1,0 +1,15 @@
+<div class="footer-wrapper flex-row-center generic-container">
+  <div class="footer-navigation flex-row-center">
+    <div class="nav-column" *ngFor="let item of navItems">
+      <app-navigation-column [column]="item"></app-navigation-column>
+    </div>
+  </div>
+  <div class="trustpilot">
+    Trust
+  </div>
+  <div class="bottom-footer flex-row-center">
+    <a *ngFor="let item of bottomItems" [routerLink]="['/', item.url]">
+      <app-paragraph [text]="item.title" [color]="'#77919F'" [size]="12"></app-paragraph>
+    </a>
+  </div>
+</div>

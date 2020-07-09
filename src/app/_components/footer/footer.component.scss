@@ -1,0 +1,25 @@
+.footer-wrapper {
+  background: var(--grey-blue);
+  padding-bottom: 0.5em;
+  .footer-navigation, .trustpilot {
+    width: fit-content;
+    .nav-column {
+      margin: 0 1.5em;
+    }
+  }
+  .bottom-footer {
+    width: 100%;
+    margin-top: 60px;
+    a {
+      padding: 0 1em;
+      border-left: 1px solid #77919F;
+      border-right: 1px solid #77919F;
+      &:first-child {
+        border-left: 0;
+      }
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+}

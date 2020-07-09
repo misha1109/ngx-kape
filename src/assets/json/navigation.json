@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "home",
+      "url": "",
+      "children": [
+        {
+          "title": "ipsum",
+          "url": "ipsum"
+        },
+        {
+          "title": "ipsum",
+          "url": "ipsum"
+        }
+      ]
+    },
+    {
+      "title": "about us",
+      "url": "about",
+      "children": [
+        {
+          "title": "ipsum",
+          "url": "ipsum"
+        },
+        {
+          "title": "ipsum",
+          "url": "ipsum"
+        }
+      ]
+    },
+    {
+      "title": "how awesome are we?",
+      "url": "awesome",
+      "children": [
+        {
+          "title": "ipsum",
+          "url": "ipsum"
+        },
+        {
+          "title": "ipsum",
+          "url": "ipsum"
+        }
+      ]
+    },
+    {
+      "title": "f.a.q",
+      "url": "faq",
+      "children": [
+        {
+          "title": "ipsum",
+          "url": "ipsum"
+        },
+        {
+          "title": "ipsum",
+          "url": "ipsum"
+        }
+      ]
+    },
+    {
+      "title": "pricing",
+      "url": "pricing",
+      "children": [
+        {
+          "title": "ipsum",
+          "url": "ipsum"
+        },
+        {
+          "title": "ipsum",
+          "url": "ipsum"
+        }
+      ]
+    }
+  ]
+}

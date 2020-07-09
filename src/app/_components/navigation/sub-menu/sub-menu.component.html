@@ -1,0 +1,15 @@
+<button class="hover-item"  mat-button (mouseenter)="setHoverState(true)" (mouseleave)="setHoverState(false)">
+  <a class="title" [routerLink]="['/', navItem.url]"
+  >
+    {{ navItem.title.toUpperCase() }}
+  </a>
+  <mat-card [ngStyle]="subMenuStyle" class="sub-menu" (mouseleave)="setHoverState(false)">
+    <button mat-menu-item *ngFor="let child of navItem.children"
+    >
+      <a [routerLink]="['/', child.url]"
+      >
+        {{ child.title.toUpperCase() }}
+      </a>
+    </button>
+  </mat-card>
+</button>

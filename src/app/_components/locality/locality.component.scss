@@ -1,0 +1,13 @@
+.flex-row-center {
+  align-items: center;
+  background: var(--grey-blue);
+  color: var(--white);
+  padding: 1em;
+  span {
+    font-weight: bold;
+  }
+  .item {
+    padding: 0.5em;
+    font-size: 14px;
+  }
+}

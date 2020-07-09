@@ -1,0 +1,9 @@
+<section class="description-wrapper flex-column-center generic-container">
+  <div class="text-wrapper">
+    <app-paragraph *ngFor="let par of paragraphs" [weight]="par.weight" [style]="par.style"
+                   [size]="par.size" [text]="par.text" [color]="par.color" [padding]="par.padding"
+    >
+    </app-paragraph>
+  </div>
+  <app-comparison></app-comparison>
+</section>

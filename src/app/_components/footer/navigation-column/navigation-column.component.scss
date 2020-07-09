@@ -1,0 +1,5 @@
+a {
+  &:not(:first-child) {
+    text-align: left;
+  }
+}

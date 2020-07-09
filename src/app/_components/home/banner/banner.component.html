@@ -1,0 +1,11 @@
+<div class="banner-wrapper flex-row-center generic-container">
+  <div class="message generic-container">
+    <app-paragraph *ngFor="let par of paragraphs" [weight]="par.weight" [style]="par.style"
+                  [size]="par.size" [text]="par.text" [color]="par.color"
+    >
+    </app-paragraph>
+    <app-buy-button [text]="'BUY OUR AWESOME TOOL'" [url]="'buy'"></app-buy-button>
+  </div>
+  <img class="mic" [src]="baseAssetUrl + 'microphone.svg'" alt="microphone"/>
+  <app-background-item *ngFor="let img of backgroundImages" [src]="img.src" [styles]="img.style"></app-background-item>
+</div>

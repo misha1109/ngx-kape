@@ -1,0 +1,16 @@
+{
+  "data": {
+    "voucher": {
+      "default": "",
+      "mutable": true
+    },
+    "source": {
+      "default": "website",
+      "mutable": false
+    },
+    "campaign": {
+      "default": "test",
+      "mutable": false
+    }
+  }
+}

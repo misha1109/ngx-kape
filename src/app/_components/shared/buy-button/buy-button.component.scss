@@ -1,0 +1,18 @@
+a {
+  button {
+    margin: 2em 0;
+    padding: 0.3em 2em;
+    color: var(--white);
+    max-width: calc( 100% - 1em );
+    white-space: break-spaces;
+    background: url("/assets/images/misc/soundwaves.svg"),  rgba(var(--red), 0.8);
+    background-size: cover;
+    &:hover {
+      color: rgb(var(--red));
+      background: var(--white);
+      -webkit-box-shadow: 5px 5px 5px 0px rgba(var(--red),0.9);
+      -moz-box-shadow: 5px 5px 5px 0px rgba(var(--red),0.9);
+      box-shadow: 5px 5px 5px 0px rgba(var(--red),0.9);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<mat-card class="card-wrapper">
+  <div *ngIf="cardData.promoted" class="free-wrapper">
+    <img src="/assets/images/misc/monthfree.svg" [alt]="cardData.freeMonths + 'free months'"/>
+    <div class="free-text"> + {{ cardData.freeMonths }} month
+      <p style="font-weight: bold">FREE</p>
+    </div>
+    <div class="gift">
+      <app-paragraph [text]="'+ FREE ' + cardData.gift" [color]="'var(--white)'"></app-paragraph>
+    </div>
+  </div>
+  <app-paragraph [text]="cardData.expiration" [size]="18" [color]="'var(--black)'"></app-paragraph>
+  <mat-card-content>
+    <div class="price-wrapper">
+      <app-offer-card-price [currency]="cardData.currency" [price]="cardData.price"></app-offer-card-price>
+    </div>
+    <app-paragraph [text]="cardData.billing" [size]="16" [color]="'var(--black)'"></app-paragraph>
+  </mat-card-content>
+  <app-buy-button [specialStyle]="{ lineHeight: '1.2' }" [text]="'get awesome now'.toUpperCase()" [url]="cardData.url"></app-buy-button>
+  <div *ngIf="cardData.promoted">
+    <app-paragraph [text]="cardData.guaranteeDays" [color]="'var(--black)'" [size]="14" [weight]="'bold'"></app-paragraph>
+  </div>
+</mat-card>

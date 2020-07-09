@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "url": "something",
+      "expiration": "1 Month",
+      "billing": "Billed 9.99$ every month",
+      "price": "13.99",
+      "currency": "$"
+    },
+    {
+      "promoted": true,
+      "url": "something",
+      "expiration": "1 Month",
+      "billing": "Billed 9.99$ every month",
+      "price": "13.99",
+      "currency": "$",
+      "guaranteeDays": "3.5",
+      "freeMonths": "2",
+      "gift": "TOASTER"
+    },
+    {
+      "url": "something",
+      "expiration": "1 Month",
+      "billing": "Billed 9.99$ every month",
+      "price": "13.99",
+      "currency": "$"
+    }
+  ]
+}

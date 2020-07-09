@@ -1,0 +1,15 @@
+.comparison-wrapper {
+  margin-top: 150px;
+  padding: 10em;
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+  background: beige;
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    position: relative;
+  }
+}

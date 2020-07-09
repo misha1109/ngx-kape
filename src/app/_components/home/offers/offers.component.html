@@ -1,0 +1,9 @@
+<div class="offers-wrapper flex-row-center">
+  <app-paragraph *ngFor="let par of paragraphs" [weight]="par.weight" [style]="par.style"
+                 [size]="par.size" [text]="par.text" [color]="'var(--white)'" [padding]="par.padding"
+  >
+  </app-paragraph>
+  <div class="flex-row-center cards" *ngIf="offers">
+    <app-offer-card *ngFor="let offer of offers" [cardData]="offer"></app-offer-card>
+  </div>
+</div>

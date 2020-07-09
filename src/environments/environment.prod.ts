@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  baseApiOffers: 'api/offers/',
+  baseApiLocality: 'api/locality/'
 };

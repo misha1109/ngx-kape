@@ -1,0 +1,13 @@
+<div class="column-wrapper" [ngStyle]="columnData.styles">
+  <div *ngIf="columnData.heading" class="heading">
+    <img [src]="columnData.heading.icon" [alt]="columnData.heading.title"/>
+    <p>{{ columnData.heading.title }}</p>
+  </div>
+  <div *ngFor="let cell of columnData.items" class="item">
+    <img *ngIf="cell === true || cell ===false; else stringCell" [src]="'/assets/images/misc/' + (cell ? 'check' : 'times' ) + '.svg'" [alt]="cell"/>
+    <ng-template #stringCell>{{ cell }}</ng-template>
+  </div>
+  <div *ngIf="columnData.buy" class="buy">
+    <app-buy-button [specialStyle]="{ lineHeight: '1.2' }" [text]="columnData.buy.title.toUpperCase()" [url]="columnData.buy.url"></app-buy-button>
+  </div>
+</div>
