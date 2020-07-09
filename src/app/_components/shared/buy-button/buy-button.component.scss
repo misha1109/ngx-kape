@@ -7,7 +7,7 @@ a {
     white-space: break-spaces;
     background: url("/assets/images/misc/soundwaves.svg"),  rgba(var(--red), 0.8);
     background-size: cover;
-    animation: frames 2000ms ease-in-out infinite;
+    animation: frames 4000ms ease-in-out infinite;
     &:hover {
       color: rgb(var(--red));
       background: var(--white);

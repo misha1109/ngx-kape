@@ -1,11 +1,12 @@
 <div class="footer-wrapper flex-row-center generic-container">
   <div class="footer-navigation flex-row-center">
     <div class="nav-column" *ngFor="let item of navItems">
+<!--      // Footer navigation columns-->
       <app-navigation-column [column]="item"></app-navigation-column>
     </div>
   </div>
   <div class="trustpilot">
-    Trust
+    <img src="/assets/images/trustpilot/trustpilot_logo.svg" alt="trustpilot"/>
   </div>
   <div class="bottom-footer flex-row-center">
     <a *ngFor="let item of bottomItems" [routerLink]="['/', item.url]">

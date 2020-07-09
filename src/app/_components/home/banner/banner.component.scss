@@ -52,3 +52,11 @@
     transform: rotate(360deg) scale(1);
   }
 }
+
+@media (max-width: 768px) {
+  .banner-wrapper {
+    .mic-wrapper {
+      max-width: 80%;
+    }
+  }
+}

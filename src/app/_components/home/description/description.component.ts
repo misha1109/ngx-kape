@@ -6,15 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./description.component.scss']
 })
 export class DescriptionComponent implements OnInit {
+  heading = 'PELLENTESQUE AT ORCI VESTIBULUM, VARIUS IPSUM';
+  // Paragraphs
   paragraphs = [
-    {
-      text: 'PELLENTESQUE AT ORCI VESTIBULUM, VARIUS IPSUM',
-      weight: 'bold',
-      size: '28',
-      style: 'italic',
-      color: 'rgb(var(--grey-blue))',
-      padding: '0'
-    },
     {
       text: 'Vivamus quis pharetra nisl',
       weight: 'bold',

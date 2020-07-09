@@ -3,7 +3,10 @@ import getOffers from '../utilities/offers';
 
 export default async function controller(req, res, next) {
   try {
-    const offers = await getOffers( req.query['voucher'] );
+    // choosing voucher
+    const voucher = req.query['voucher'] || req.cookies['voucher'];
+    // calculating offers price if voucher discount exists
+    const offers = await getOffers( voucher );
     initBaseCookies(req, res);
     res.status(200).send(offers);
   } catch (e) {

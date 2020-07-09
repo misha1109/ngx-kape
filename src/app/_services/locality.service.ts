@@ -14,11 +14,13 @@ export class LocalityService {
   constructor(
     private http: HttpService,
   ) {
+    // Emit to subscribers
     this.localitySubject = new Subject();
     this.getlocalityApi();
   }
 
   getlocalityObservable() {
+    // Calling the server to get locality data on service init
     return this.localitySubject.asObservable();
   }
   async getlocalityApi() {

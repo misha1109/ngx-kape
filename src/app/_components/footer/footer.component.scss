@@ -1,6 +1,9 @@
 .footer-wrapper {
   background: var(--grey-blue);
   padding-bottom: 0.5em;
+  .trustpilot {
+    padding: 1em 2em;
+  }
   .footer-navigation, .trustpilot {
     width: fit-content;
     .nav-column {

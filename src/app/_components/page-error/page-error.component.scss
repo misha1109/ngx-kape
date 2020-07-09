@@ -1,0 +1,10 @@
+.error-wrapper {
+  display: block;
+  height: 100vh;
+  text-align: center;
+  font-size: 34px;
+  font-style: italic;
+  p {
+    color: var(--red);
+  }
+}

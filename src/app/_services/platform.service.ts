@@ -5,6 +5,7 @@ import {isPlatformBrowser} from '@angular/common';
   providedIn: 'root'
 })
 export class PlatformService {
+  // Service for identifying if platform is browser to prevent errors on ssr and etc
   isBrowser: boolean;
   constructor(
     @Inject(PLATFORM_ID) private platformId

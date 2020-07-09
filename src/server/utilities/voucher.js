@@ -1,6 +1,7 @@
 import getConfig from '../utilities/configLoader'
 
 export function checkIfVoucher (voucher) {
+  // Check if voucher valid
   const config = getConfig('vouchers');
   if ( config[voucher] ) {
     return config[voucher]['discount']
@@ -10,6 +11,7 @@ export function checkIfVoucher (voucher) {
 }
 
 export function applyVoucher( discount, offers ) {
+  // Applying the voucher discount for all offers
   return offers.map( offer => {
     const newOffer = {
       ...offer,

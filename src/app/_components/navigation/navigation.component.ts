@@ -27,6 +27,7 @@ export class NavigationComponent implements OnInit, OnDestroy {
     this.langSubscription = this.langService.languageObservable().subscribe( lang => this.lang = lang );
   }
   ngOnDestroy() {
+    // Unsubscribing to prevent leaks
     if ( this.langSubscription ) {
       this.langSubscription.unsubscribe();
     }

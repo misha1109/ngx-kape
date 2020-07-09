@@ -12,6 +12,7 @@ export class LanguageService {
   ) {
     this.langSubject = new BehaviorSubject(null);
     this.assetsService.getJson('languages').then( lngs => {
+      // Emit to subscribers
       this.langSubject = new BehaviorSubject({
         languages: lngs,
         current: lngs[0]

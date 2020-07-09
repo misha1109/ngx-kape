@@ -8,7 +8,7 @@ import {AssetsService} from '../../_services/assets.service';
 })
 export class FooterComponent implements OnInit {
   navItems;
-  copyright: string;
+  // Footer bottom navigation items
   bottomItems = [
     {
       title: `Copyright \u00A9 ${new Date().getFullYear()} The Great Editor Tool inc.`,
@@ -28,6 +28,7 @@ export class FooterComponent implements OnInit {
   ) { }
 
   async ngOnInit() {
+    // Getting the navigation items from json
     this.navItems = await this.assetService.getJson('navigation');
   }
 }

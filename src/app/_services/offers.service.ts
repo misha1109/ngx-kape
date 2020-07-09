@@ -17,6 +17,7 @@ export class OffersService {
     private ar: ActivatedRoute
   ) {
     this.offersSubject = new Subject();
+    // Subscribing to offers from the query change
     this.ar.queryParams.subscribe( params => {
       this.getOffersApi(params);
     });
@@ -25,10 +26,10 @@ export class OffersService {
     return this.offersSubject.asObservable();
   }
   async getOffersApi(query) {
+    // Requesing the offers from the server
     this.offers = await this.http.get( `${this.baseUrl}`, {
       params: {...query}
     });
-    console.log(this.offers)
     this.offersSubject.next(this.offers);
   }
 }

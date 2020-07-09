@@ -5,18 +5,26 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class HttpService {
+  // Http request service
   options = {
+    // base options
     headers: [],
   };
   constructor(
     private http: HttpClient
   ) { }
 
-  get( url, options = null ) {
-    options = {
-      ...this.options,
-      ...options
-    };
-    return this.http.get(url, options).toPromise();
+  async get( url, options = null ) {
+    // Http get
+    try {
+      options = {
+        ...this.options,
+        ...options
+      };
+      const response = await this.http.get(url, options).toPromise();
+      return response;
+    } catch (e) {
+      console.log(e);
+    }
   }
 }

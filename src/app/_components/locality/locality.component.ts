@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {LocalityService} from '../../_services/locality.service';
 import {Subscription} from 'rxjs';
 
@@ -7,7 +7,7 @@ import {Subscription} from 'rxjs';
   templateUrl: './locality.component.html',
   styleUrls: ['./locality.component.scss']
 })
-export class LocalityComponent implements OnInit {
+export class LocalityComponent implements OnInit, OnDestroy {
   localitySubscription: Subscription;
   local;
   status: string;
@@ -16,11 +16,18 @@ export class LocalityComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    // Subscribing to locality from response
     this.localitySubscription = this.localityService.getlocalityObservable().subscribe(local => {
       this.local = local;
       this.status = local.secure ? 'hidden' : 'exposed'
-      console.log(this.local)
+      console.log(`%c${JSON.stringify(local)}`, 'color:green');
     });
   }
+   ngOnDestroy(): void {
+     // Unsubscribing to prevent leaks
+     if ( this.localitySubscription ) {
+       this.localitySubscription.unsubscribe();
+     }
+   }
 
 }

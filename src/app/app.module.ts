@@ -9,11 +9,13 @@ import {NavigationModule} from './_components/navigation/navigation.module';
 import {FooterModule} from './_components/footer/footer.module';
 import { HttpClientModule } from '@angular/common/http';
 import {LocalityComponent} from './_components/locality/locality.component';
+import {PageErrorComponent} from './_components/page-error/page-error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LocalityComponent
+    LocalityComponent,
+    PageErrorComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComparisonComponent implements OnInit {
   gridArr: any[];
+  // Data of the comparision between products
+  // Each item represents a column
   featuresColumns = [
     {
       items: [
-        'feature', 'feature', 'feature', 'feature', 'feature', 'feature', 'feature'
+        'asdjasld qweqwe asdasd', 'asdasdqwe', 'vb tfghvc', 'tert ', 'gdf ', 'dfgdgdfgr r r r dgdfg', 'asdqw  wwqe sss'
       ],
       styles: {
         background: 'var(--white)',

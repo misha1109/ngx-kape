@@ -1,6 +1,6 @@
 <div class="flex-row-center" *ngIf="local">
-  <div class="item">Your Location: <span>{{ local.location.toUpperCase() }}</span></div>
-  <div class="item">Your IP: <span>{{ local.ip }}</span></div>
-  <div class="item">Your Status: <span>{{ status.toUpperCase() }}</span></div>
+  <div class="item">Your Location: <span>{{ local.location?.toUpperCase() }}</span></div>
+  <div class="item">Your IP: <span>{{ local?.ip }}</span></div>
+  <div class="item">Your Status: <span>{{ status?.toUpperCase() }}</span></div>
   <img [src]="!local.secure ? '/assets/images/misc/exclamation-square.svg' : ''" alt="status"/>
 </div>

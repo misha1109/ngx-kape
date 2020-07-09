@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class BannerComponent implements OnInit {
   // TODO: add interfaces
   baseAssetUrl = '/assets/images/banner/';
+  // Paragraphs data
   paragraphs = [
     {
       text: 'Lorem ipsum dolor sit elit',
@@ -43,6 +44,7 @@ export class BannerComponent implements OnInit {
       size: '20',
     }
   ];
+  // Background images data
   backgroundImages = [
     {
       src: '/assets/images/banner/top_cutter_red.svg',
