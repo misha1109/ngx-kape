@@ -26,6 +26,14 @@ button {
   }
 }
 
+.hover-item {
+  transition-duration: 0.5s;
+  position: relative;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
 .hover-item:hover .title{
   color: rgb(var(--red));
 }

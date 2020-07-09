@@ -1,6 +1,19 @@
 .description-wrapper {
   position: relative;
+  margin-top: -2em;
   .text-wrapper {
     margin: 50px 0 60px;
+  }
+  background: var(--grey-bcg);
+}
+.comprasion-parent {
+  background: var(--grey-bcg);
+}
+
+@media (max-width: 768px) {
+  .description-wrapper {
+    margin-top: -3em;
+    background: var(--grey-bcg);
+    z-index: -1;
   }
 }

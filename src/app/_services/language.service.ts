@@ -10,6 +10,7 @@ export class LanguageService {
   constructor(
     private assetsService: AssetsService
   ) {
+    this.langSubject = new BehaviorSubject(null);
     this.assetsService.getJson('languages').then( lngs => {
       this.langSubject = new BehaviorSubject({
         languages: lngs,

@@ -23,3 +23,16 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .footer-wrapper {
+    .bottom-footer {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 20px;
+      a {
+        border: 0;
+      }
+    }
+  }
+}

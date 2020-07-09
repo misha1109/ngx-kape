@@ -1,4 +1,4 @@
-<div class="column-wrapper" [ngStyle]="columnData.styles">
+<div class="column-wrapper" [ngStyle]="columnData.styles" [ngClass]="isSmall && !columnData.heading ? 'hide' : ''">
   <div *ngIf="columnData.heading" class="heading">
     <img [src]="columnData.heading.icon" [alt]="columnData.heading.title"/>
     <p>{{ columnData.heading.title }}</p>

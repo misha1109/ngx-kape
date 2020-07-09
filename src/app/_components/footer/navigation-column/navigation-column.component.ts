@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {BreakpointsService} from '../../../_services/breakpoints.service';
 
 @Component({
   selector: 'app-navigation-column',
@@ -7,9 +8,15 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class NavigationColumnComponent implements OnInit {
   @Input() column;
-  constructor() { }
+  isMobile: boolean;
+  constructor(
+    private breakpointService: BreakpointsService
+  ) { }
 
   ngOnInit(): void {
+    this.breakpointService.getBreakpointObserver().subscribe( (screen) => {
+      this.isMobile = screen.mobile;
+    });
   }
 
 }

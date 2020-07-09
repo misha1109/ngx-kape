@@ -1,7 +1,9 @@
-<div class="comparison-wrapper">
-  <div class="feature-grid">
-    <div *ngFor="let column of featuresColumns">
-      <app-features-column [columnData]="column"></app-features-column>
+<div class="background-wrapper">
+  <div class="comparison-wrapper">
+    <div class="feature-grid">
+      <div *ngFor="let column of featuresColumns">
+        <app-features-column [columnData]="column"></app-features-column>
+      </div>
     </div>
   </div>
 </div>

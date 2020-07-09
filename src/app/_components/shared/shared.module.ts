@@ -4,16 +4,14 @@ import { BuyButtonComponent } from './buy-button/buy-button.component';
 import {RouterModule} from '@angular/router';
 import {MatButtonModule} from '@angular/material/button';
 import { ParagraphComponent } from './paragraph/paragraph.component';
-import { BackgroundItemComponent } from './background-item/background-item.component';
 
 
 
 @NgModule({
-  declarations: [BuyButtonComponent, ParagraphComponent, BackgroundItemComponent],
+  declarations: [BuyButtonComponent, ParagraphComponent],
   exports: [
     BuyButtonComponent,
     ParagraphComponent,
-    BackgroundItemComponent
   ],
   imports: [
     CommonModule,

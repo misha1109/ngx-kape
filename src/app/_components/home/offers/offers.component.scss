@@ -1,5 +1,11 @@
-.offers-wrapper {
-  .cards {
-    align-items: center;
+.background-wrapper {
+  background: var(--grey-blue);
+  .offers-wrapper {
+    .cards {
+      align-items: center;
+    }
+    background: url("/assets/images/offers/soundbars_bottom.svg"), url("/assets/images/offers/bottom_cutter_red.svg");
+    background-repeat: no-repeat;
+    background-position: 120px 154%, 100% 100%;
   }
 }

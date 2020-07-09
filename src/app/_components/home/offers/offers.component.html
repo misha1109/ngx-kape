@@ -1,9 +1,13 @@
-<div class="offers-wrapper flex-row-center">
-  <app-paragraph *ngFor="let par of paragraphs" [weight]="par.weight" [style]="par.style"
-                 [size]="par.size" [text]="par.text" [color]="'var(--white)'" [padding]="par.padding"
-  >
-  </app-paragraph>
-  <div class="flex-row-center cards" *ngIf="offers">
-    <app-offer-card *ngFor="let offer of offers" [cardData]="offer"></app-offer-card>
+<div class="background-wrapper">
+  <div class="offers-wrapper flex-row-center">
+    <div class="flex-column-center">
+      <app-paragraph *ngFor="let par of paragraphs" [weight]="par.weight" [style]="par.style"
+                     [size]="par.size" [text]="par.text" [color]="'var(--white)'" [padding]="par.padding"
+      >
+      </app-paragraph>
+    </div>
+    <div class="flex-row-center cards" *ngIf="offers">
+      <app-offer-card *ngFor="let offer of offers" [cardData]="offer"></app-offer-card>
+    </div>
   </div>
 </div>

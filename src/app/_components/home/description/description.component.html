@@ -1,9 +1,13 @@
-<section class="description-wrapper flex-column-center generic-container">
-  <div class="text-wrapper">
-    <app-paragraph *ngFor="let par of paragraphs" [weight]="par.weight" [style]="par.style"
-                   [size]="par.size" [text]="par.text" [color]="par.color" [padding]="par.padding"
-    >
-    </app-paragraph>
+<div class="description-wrapper flex-column-center generic-container">
+  <div class="text-wrapper inner-container">
+    <div>
+      <app-paragraph *ngFor="let par of paragraphs" [weight]="par.weight" [style]="par.style"
+                     [size]="par.size" [text]="par.text" [color]="par.color" [padding]="par.padding"
+      >
+      </app-paragraph>
+    </div>
   </div>
+</div>
+<div class="comprasion-parent">
   <app-comparison></app-comparison>
-</section>
+</div>

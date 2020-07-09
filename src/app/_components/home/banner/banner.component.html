@@ -6,6 +6,7 @@
     </app-paragraph>
     <app-buy-button [text]="'BUY OUR AWESOME TOOL'" [url]="'buy'"></app-buy-button>
   </div>
-  <img class="mic" [src]="baseAssetUrl + 'microphone.svg'" alt="microphone"/>
-  <app-background-item *ngFor="let img of backgroundImages" [src]="img.src" [styles]="img.style"></app-background-item>
+  <div class="mic-wrapper">
+    <img [src]="baseAssetUrl + 'microphone.svg'" alt="microphone"/>
+  </div>
 </div>

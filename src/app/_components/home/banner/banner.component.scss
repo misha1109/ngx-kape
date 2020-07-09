@@ -1,8 +1,14 @@
 .banner-wrapper {
-  position: relative;
-  .mic {
+  .mic-wrapper {
     max-width: 400px;
     flex-basis: 400px;
+    z-index: 3;
+    overflow: hidden;
+    transform: rotate(0);
+    animation: micFrames 6000ms infinite ease;
+    img {
+
+    }
   }
   .message {
     text-align: center;
@@ -18,5 +24,31 @@
       }
     }
   }
+  // TODO: change url to variable
+  background: url("/assets/images/banner/top_cutter_white.svg"), url("/assets/images/banner/top_cutter_white.svg"), url("/assets/images/banner/top_cutter_red.svg"), url("/assets/images/banner/top_cutter_grey.svg"),url("/assets/images/banner/top_soundwaves.svg");
+  background-repeat: no-repeat;
+  background-position: 25% 92%, 25% 92%, 25% calc( 96% + -8px ), 25% calc( 96% + -14px ), 25% 88%;
+  background-size: 150%, 150%, 150%, 150%, 50%;
 }
 
+@keyframes micFrames {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    opacity: 0.9;
+    transform: rotate(90deg) scale(1.1);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(180deg) scale(1);
+  }
+  75% {
+    opacity: 0.9;
+    transform: rotate(270deg) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg) scale(1);
+  }
+}

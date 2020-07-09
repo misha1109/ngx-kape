@@ -7,6 +7,7 @@ a {
     white-space: break-spaces;
     background: url("/assets/images/misc/soundwaves.svg"),  rgba(var(--red), 0.8);
     background-size: cover;
+    animation: frames 2000ms ease-in-out infinite;
     &:hover {
       color: rgb(var(--red));
       background: var(--white);
@@ -14,5 +15,26 @@ a {
       -moz-box-shadow: 5px 5px 5px 0px rgba(var(--red),0.9);
       box-shadow: 5px 5px 5px 0px rgba(var(--red),0.9);
     }
+  }
+}
+
+@media (max-width: 768px) {
+  a {
+    button {
+      padding: 0.2em 0.6em;
+    }
+  }
+}
+
+
+@keyframes frames {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }

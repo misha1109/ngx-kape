@@ -35,3 +35,30 @@
     }
   }
 }
+
+.hide {
+  display: none !important;
+}
+
+@media (max-width: 1000px) {
+  .column-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    padding: 1em;
+    border-radius: 20px;
+    width: 80%;
+    .heading {
+      top: 0;
+      height: 100px;
+      width: auto;
+      position: relative;
+    }
+    .buy {
+      height: 100px;
+    }
+  }
+}

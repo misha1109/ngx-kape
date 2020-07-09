@@ -12,3 +12,18 @@
     }
   }
 }
+
+.logo {
+  //animation: frames forwards 1000ms ease-in-out;
+}
+
+@keyframes frames {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
