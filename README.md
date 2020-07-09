@@ -1,6 +1,11 @@
-# NgJade
+# NgKape
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
+
+## IMPORTANT: HOW TO RUN LOCALLY
+####npm i
+####npm run dev:ssr
+(Because of the use of ssr that script is required)
 
 ## Development server
 
