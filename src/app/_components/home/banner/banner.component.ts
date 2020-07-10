@@ -44,28 +44,6 @@ export class BannerComponent implements OnInit {
       size: '20',
     }
   ];
-  // Background images data
-  backgroundImages = [
-    {
-      src: '/assets/images/banner/top_cutter_red.svg',
-      style: {
-        top: '26%'
-      }
-    },
-    {
-      src: '/assets/images/banner/top_cutter_grey.svg',
-      style: {
-        top: 'calc( 26% - 12px )',
-        zIndex: '-2'
-      }
-    },
-    {
-      src: '/assets/images/banner/top_cutter_white.svg',
-      style: {
-        top: 'calc(26% + 54px)'
-      }
-    }
-  ];
   constructor() { }
 
   ngOnInit(): void {
