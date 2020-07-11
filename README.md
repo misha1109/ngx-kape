@@ -1,11 +1,22 @@
 # NgKape
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
+## Build Deploy On Heroku
+##### https://ngx-kape.herokuapp.com/
+(Here the ip and location functionality are enabled)
 
-## IMPORTANT: HOW TO RUN LOCALLY
-#### npm i
-#### npm run dev:ssr
-(Because of the use of ssr that script is required)
+## HOW TO RUN LOCALLY
+
+### Production build using local server `(Better performance)`:
+##### npm i
+##### npm run build:ssr
+##### node dist/ng-jade/server/main.js
+##### Navigate to localhost (`default port 4000`)
+
+### local SSR for development:
+##### npm i
+##### npm run dev:ssr
+##### Navigate to localhost (`default port 4200`)
+
 
 ## Development server
 
